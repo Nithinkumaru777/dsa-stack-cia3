@@ -1,0 +1,25 @@
+=== CIA-3: Stack Demonstration ===
+Nithin Kumar U (USN: 2102508611)
+
+--- Walkthrough: fixed stack, capacity 4 ---
+[Step] push(10) -> size 1
+[Step] push(20) -> size 2
+[Step] push(30) -> size 3
+[Step] peek() -> 30, size 3
+[Step] pop() -> 30, size 2
+[Step] pop() -> 20, size 1
+[Step] pop() -> 10, size 0
+
+--- Automated Test Suite ---
+Test 1: new stack is empty [PASSED]
+Test 2: pop order is LIFO [PASSED]
+Test 3: peek does not remove [PASSED]
+Test 4: push 1 2 3, pop, peek gives 2 [PASSED]
+Test 5: isFull only at capacity [PASSED]
+Test 6: push on full throws overflow [PASSED]
+Test 7: pop on empty throws underflow [PASSED]
+Test 8: peek on empty throws underflow [PASSED]
+Test 9: slot is reusable after pop [PASSED]
+Test 10: dynamic stack holds 10000 values [PASSED]
+
+All 10 tests passed
